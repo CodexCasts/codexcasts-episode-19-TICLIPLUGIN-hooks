@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+/*jslint node: true */
+'use strict';
+
+var spawn = require('child_process').spawn,
+		path = require('path'),
+    exec = require('./lib/exec');
+
+console.log('Installing titanium stuff...');
+
+console.log('--- Installing Build Command(s) ---');
+
+			// I am making the assumption that I have titanium. This really should be challenged  
+			exec('ti', ['config', '-a', 'paths.commands', path.join( __dirname , 'plugin')], null, function() {
+			console.info('Titanium CLI command installed.');
+});
+
+console.log('--- Installing Build flag(s) ---');
+
+
+var hook = spawn('ti', [
+		'config',
+		'-a',
+		'paths.hooks',
+		path.join(__dirname, 'plugin', 'hooks')
+	]);
+
+hook.stderr.pipe(process.stderr);
+
+hook.on('exit', function(code) {
+	code === 0 && console.log('spec hook installed');
+});

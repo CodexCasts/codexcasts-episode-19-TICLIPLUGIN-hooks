@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton',
+5 verbose install   [ 'commander', 'pkginfo', 'node-appc', 'tiapp', 'mocha', 'should' ] ]
+6 info preinstall TiCLIPluginSkeleton@1.0.10
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping commander@^2.1.0 /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+9 verbose already installed skipping pkginfo@^0.3.0 /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+10 verbose already installed skipping node-appc@0.2.26 /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+11 verbose already installed skipping tiapp@0.0.2 /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+12 verbose already installed skipping mocha@* /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+13 verbose already installed skipping should@>= 0.0.1 /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+14 silly resolved []
+15 info build /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+16 verbose linkStuff [ false,
+16 verbose linkStuff   false,
+16 verbose linkStuff   false,
+16 verbose linkStuff   '/Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands' ]
+17 info linkStuff TiCLIPluginSkeleton@1.0.10
+18 verbose linkBins TiCLIPluginSkeleton@1.0.10
+19 verbose linkMans TiCLIPluginSkeleton@1.0.10
+20 verbose rebuildBundles TiCLIPluginSkeleton@1.0.10
+21 verbose rebuildBundles [ '.bin',
+21 verbose rebuildBundles   'commander',
+21 verbose rebuildBundles   'mocha',
+21 verbose rebuildBundles   'node-appc',
+21 verbose rebuildBundles   'pkginfo',
+21 verbose rebuildBundles   'should',
+21 verbose rebuildBundles   'tiapp' ]
+22 info install TiCLIPluginSkeleton@1.0.10
+23 info postinstall TiCLIPluginSkeleton@1.0.10
+24 verbose unsafe-perm in lifecycle true
+25 info TiCLIPluginSkeleton@1.0.10 Failed to exec postinstall script
+26 error TiCLIPluginSkeleton@1.0.10 postinstall: `node install`
+26 error Exit status 8
+27 error Failed at the TiCLIPluginSkeleton@1.0.10 postinstall script.
+27 error This is most likely a problem with the TiCLIPluginSkeleton package,
+27 error not with npm itself.
+27 error Tell the author that this fails on your system:
+27 error     node install
+27 error You can get their info via:
+27 error     npm owner ls TiCLIPluginSkeleton
+27 error There is likely additional logging output above.
+28 error System Darwin 14.4.0
+29 error command "node" "/usr/local/bin/npm" "install"
+30 error cwd /Users/andrewmcelroy/Desktop/codexcasts-episode-18-TICLIPLUGIN-commands/TiCLIPluginSkeleton
+31 error node -v v0.10.37
+32 error npm -v 1.4.28
+33 error code ELIFECYCLE
+34 verbose exit [ 1, true ]

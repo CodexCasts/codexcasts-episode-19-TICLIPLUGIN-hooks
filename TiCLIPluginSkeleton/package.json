@@ -1,0 +1,49 @@
+{
+  "name": "TiCLIPluginSkeleton",
+  "version": "1.0.10",
+  "description": "A skeleton for creating Ti ClI Plugins (titanium commands)",
+  "scripts": {
+    "postinstall": "node install",
+    "test": "mocha test -w"
+  },
+	"config": {
+		    "unsafe-perm":true
+		},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/CodexLabs/TiCLIPluginSkeleton"
+  },
+  "keywords": [
+    "Titanium",
+    "CLI",
+    "hooks",
+    "Plugins"
+  ],
+  "maintainers": [
+    {
+      "name": "Andrew McElroy",
+      "email": "amcelroy@codexlabs.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "http://github.com/CodexLabs/TiCLIPluginSkeleton/issues"
+  },
+  "homepage": "http://github.com/CodexLabs/TiCLIPluginSkeleton",
+  "dependencies": {
+    "commander": "^2.1.0",
+    "pkginfo": "^0.3.0",
+    "node-appc": "0.2.26",
+		"tiapp":"0.0.2",
+		"adm-zip": "^0.4.4",
+    "blessed": "0.0.38",
+    "blessed-contrib": "0.0.6",
+    "fs-extra": "^0.16.3",
+    "lodash": "^3.0.0",
+    "tiapp.xml": "^0.2.2"
+  },
+   "devDependencies": {
+   "mocha": "*",
+   "should": ">= 0.0.1"
+ }
+}
